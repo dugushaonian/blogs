@@ -63,7 +63,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">73字</span>
+            <span class="post-count">279字</span>
         </span>
     </span>
 
@@ -99,19 +99,26 @@
       
 
       
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+      <p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>: 快速、简洁且高效的博客框架。<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">GitHub</a>。</p>
+<p>Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>这里主要记录下本人使用Hexo建站的本blog的过程。</p>
+<h1 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h1><h2 id="1、安装Hexo"><a href="#1、安装Hexo" class="headerlink" title="1、安装Hexo"></a>1、安装Hexo</h2><p>安装Hexo前，首先要安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>和<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>（node.js和git安装见相关文档）。</p>
+<p>然后执行如下命令安装hexo-cli</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="2、初始化blog"><a href="#2、初始化blog" class="headerlink" title="2、初始化blog"></a>2、初始化blog</h2><p>执行如下命令，hexo会初始化项目到blog目录。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h2 id="3、启动本地服务"><a href="#3、启动本地服务" class="headerlink" title="3、启动本地服务"></a>3、启动本地服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>然后浏览器输入：localhost:4000即可查看</p>
+<h1 id="二、Blog编辑"><a href="#二、Blog编辑" class="headerlink" title="二、Blog编辑"></a>二、Blog编辑</h1><h2 id="1、目录结构"><a href="#1、目录结构" class="headerlink" title="1、目录结构"></a>1、目录结构</h2><p>创建完hexo项目后，blog中的内容如下：<br><img src="/blogs/images/hexo-blog/20200301102646538.png" alt=""></p>
+<h1 id="三、部署"><a href="#三、部署" class="headerlink" title="三、部署"></a>三、部署</h1><h2 id="1、安装插件hexo-deployer-git"><a href="#1、安装插件hexo-deployer-git" class="headerlink" title="1、安装插件hexo-deployer-git"></a>1、安装插件hexo-deployer-git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="2、修改-config-yml"><a href="#2、修改-config-yml" class="headerlink" title="2、修改_config.yml"></a>2、修改_config.yml</h2><p>如下：将deploy的type改成git，repo改成想要部署的github仓库地址即可，branch等其他参数选填。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">[branch]</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="3、上传部署"><a href="#3、上传部署" class="headerlink" title="3、上传部署"></a>3、上传部署</h2><p>上面配置完成后，只需执行如下命令即可将文件上传到对应的github仓库。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
       <!-- reward -->
@@ -193,6 +200,20 @@
 
   
   
+  <nav class="article-nav">
+    
+      <a href="/blogs/2020/03/01/hexo-editor/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            HexoEditor
+          
+        </div>
+      </a>
+    
+    
+  </nav>
+
 
   
 
