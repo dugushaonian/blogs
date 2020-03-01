@@ -195,7 +195,12 @@
 
 <h2 id="3、启动本地服务"><a href="#3、启动本地服务" class="headerlink" title="3、启动本地服务"></a>3、启动本地服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>然后浏览器输入：localhost:4000即可查看</p>
-<h1 id="二、Blog编辑"><a href="#二、Blog编辑" class="headerlink" title="二、Blog编辑"></a>二、Blog编辑</h1><h2 id="1、目录结构"><a href="#1、目录结构" class="headerlink" title="1、目录结构"></a>1、目录结构</h2><p>创建完hexo项目后，blog中的内容如下：<br><img src="/blogs/images/hexo-blog/20200301102646538.png" alt=""></p>
+<h1 id="二、Blog编辑"><a href="#二、Blog编辑" class="headerlink" title="二、Blog编辑"></a>二、Blog编辑</h1><h2 id="1、目录结构"><a href="#1、目录结构" class="headerlink" title="1、目录结构"></a>1、目录结构</h2><p>创建完hexo项目后，blog中的内容如下：<br><img src="/blogs/images/hexo-blog/20200301105855737.png" alt=""></p>
+<ul>
+<li>source中是源文件, 文章都放到_post目录中。</li>
+<li>themes中是项目主题，可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Themes</a>中选择自己喜欢的主题。</li>
+<li>_config.yml中是项目的配置，可以在该文件中修改项目的名称等配置</li>
+</ul>
 <h1 id="三、部署"><a href="#三、部署" class="headerlink" title="三、部署"></a>三、部署</h1><h2 id="1、安装插件hexo-deployer-git"><a href="#1、安装插件hexo-deployer-git" class="headerlink" title="1、安装插件hexo-deployer-git"></a>1、安装插件hexo-deployer-git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h2 id="2、修改-config-yml"><a href="#2、修改-config-yml" class="headerlink" title="2、修改_config.yml"></a>2、修改_config.yml</h2><p>如下：将deploy的type改成git，repo改成想要部署的github仓库地址即可，branch等其他参数选填。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">[branch]</span></span><br></pre></td></tr></table></figure>
