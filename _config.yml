@@ -7,13 +7,13 @@ title: 独孤博客
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Dugufei
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://github.com/dugushaonian/blogs/
+url: https://dugushaonian.github.io/blogs/
 root: /blogs/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -93,10 +93,15 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: ayer
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/dugushaonian/blogs.git
+
+search:
+  path: search.xml
+  field: post
+  format: html
