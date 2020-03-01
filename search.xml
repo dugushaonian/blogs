@@ -36,12 +36,10 @@
 
 <blockquote>
 <p>注：当再次上传部署时，需要先执行:</p>
-</blockquote>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<blockquote>
 <p>然后再执行：</p>
-</blockquote>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</blockquote>
 ]]></content>
       <categories>
         <category>Hexo</category>
