@@ -34,6 +34,14 @@
 <h2 id="3、上传部署"><a href="#3、上传部署" class="headerlink" title="3、上传部署"></a>3、上传部署</h2><p>上面配置完成后，只需执行如下命令即可将文件上传到对应的github仓库。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>注：当再次上传部署时，需要先执行:</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>然后再执行：</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Hexo</category>
