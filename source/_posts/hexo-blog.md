@@ -37,7 +37,7 @@ hexo server
 # 二、Blog编辑
 ## 1、目录结构
 创建完hexo项目后，blog中的内容如下：
-![](/blogs/images/hexo-blog/20200301105855737.png)
+![](/blogs/images/hexo-blog/hexo-blogs.png)
 
 * source中是源文件, 文章都放到_post目录中。
 * themes中是项目主题，可以去[Themes](https://hexo.io/themes/)中选择自己喜欢的主题。
